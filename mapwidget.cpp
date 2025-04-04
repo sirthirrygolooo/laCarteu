@@ -1,4 +1,3 @@
-// mapwidget.cpp
 #include "mapwidget.h"
 #include <QDir>
 #include <QFile>
@@ -10,7 +9,7 @@
 
 MapWidget::MapWidget(QWidget *parent)
     : QWidget(parent), networkManager(new QNetworkAccessManager(this)), isDragging(false) {
-    setMinimumSize(520, 520); // Taille minimale pour la carte
+    setMinimumSize(520, 520);
 }
 
 void MapWidget::setCenter(double lon, double lat) {
@@ -18,7 +17,7 @@ void MapWidget::setCenter(double lon, double lat) {
     this->lat = lat;
     updateVisibleTiles();
     update();
-    emit mapMoved(lon, lat); // Émettre le signal lorsque le centre est mis à jour
+    emit mapMoved(lon, lat);
 }
 
 void MapWidget::setZoom(int zoom) {

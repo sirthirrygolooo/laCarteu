@@ -1,4 +1,3 @@
-// mainwindow.h
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -50,4 +49,4 @@ private:
     void updateStatusBar(double lon, double lat);
 };
 
-#endif // MAINWINDOW_H
+#endif
