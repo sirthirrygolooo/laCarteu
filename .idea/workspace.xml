@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9a4478e-316c-4ef1-881b-36e127376d2f" name="Changes" comment="re-commit">
+      <change afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt.user" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mainwindow.cpp.BC86CC97186B9A11.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mainwindow.cpp.BC86CC97186B9A11.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mainwindow.h.D771505732EFF6ED.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mainwindow.h.D771505732EFF6ED.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mapwidget.cpp.496DD66E44D4BE7A.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mapwidget.cpp.496DD66E44D4BE7A.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mapwidget.h.971E3652BBD41B8C.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc_clangd/.cache/clangd/index/mapwidget.h.971E3652BBD41B8C.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/laCarteu.dir/mainwindow.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/laCarteu.dir/mainwindow.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/laCarteu.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/laCarteu.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapwidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mapwidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapwidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/mapwidget.h" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sirthirrygolooo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sirthirrygolooo/laCarteu.git&quot;,
+    &quot;accountId&quot;: &quot;18fa4b4b-b23c-4239-b34c-7b9e95eda09e&quot;
+  }
+}</component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vBflNBH6uLMSJCofJDAr3OElU8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "Merging master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jbfro/OneDrive/Documents/Code/S4/CPP/QT/laCarteu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9a4478e-316c-4ef1-881b-36e127376d2f" name="Changes" comment="" />
+      <created>1743623538181</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743623538181</updated>
+      <workItem from="1743623539277" duration="6697000" />
+      <workItem from="1743763936018" duration="659000" />
+      <workItem from="1743783335836" duration="467000" />
+      <workItem from="1743783812302" duration="289000" />
+    </task>
+    <task id="LOCAL-00001" summary="hh">
+      <option name="closed" value="true" />
+      <created>1743764225105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743764225105</updated>
+    </task>
+    <task id="LOCAL-00002" summary="hh">
+      <option name="closed" value="true" />
+      <created>1743764277034</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743764277034</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit initial pour test architecture">
+      <option name="closed" value="true" />
+      <created>1743783443745</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743783443745</updated>
+    </task>
+    <task id="LOCAL-00004" summary="re-commit">
+      <option name="closed" value="true" />
+      <created>1743783739986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743783739986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hh" />
+    <MESSAGE value="commit initial pour test architecture" />
+    <MESSAGE value="re-commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="re-commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/mapwidget.cpp</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
