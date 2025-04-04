@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-151ae8e83c964e3027a6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "laCarteu",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "laCarteu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-laCarteu-Debug-7188b7dafb48650749f3.json",
+					"name" : "laCarteu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "laCarteu_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-laCarteu_autogen-Debug-bff0fb75f646c053b2c7.json",
+					"name" : "laCarteu_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "laCarteu_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-laCarteu_autogen_timestamp_deps-Debug-3062c9d3ae04fd409ec5.json",
+					"name" : "laCarteu_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jbfro/OneDrive/Documents/Code/S4/CPP/QT/laCarteu/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/jbfro/OneDrive/Documents/Code/S4/CPP/QT/laCarteu"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
