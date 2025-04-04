@@ -1,3 +1,4 @@
+// mapwidget.h
 #ifndef MAPWIDGET_H
 #define MAPWIDGET_H
 
@@ -23,6 +24,7 @@ public:
 
 signals:
     void mapMoved(double lon, double lat);
+    void mousePositionChanged(double lon, double lat); // Signal pour la position de la souris
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -30,6 +32,7 @@ protected:
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
     void wheelEvent(QWheelEvent *event) override;
+    void mouseDoubleClickEvent(QMouseEvent *event) override; // Ajout pour le double-clic
 
 private:
     double lon, lat;
@@ -42,6 +45,7 @@ private:
     void loadTile(int x, int y, int z);
     QPointF latLonToTilePos(double lon, double lat, int z);
     void updateVisibleTiles();
+    QPointF screenPosToLatLon(const QPoint &pos);
 };
 
 #endif // MAPWIDGET_H

@@ -1,3 +1,4 @@
+// mainwindow.cpp
 #include "mainwindow.h"
 #include "mapwidget.h"
 #include <QMenuBar>
@@ -56,7 +57,7 @@ MainWindow::MainWindow(QWidget *parent)
     _list.reset(new QListWidget{this});
     leftLayout->addWidget(_list.get());
 
-    connect(_list.get(), &QListWidget::itemClicked, this, &MainWindow::onPlaceSelected);
+    connect(_list.get(), &QListWidget::itemDoubleClicked, this, &MainWindow::onPlaceSelected);
 
     mapWidget = new MapWidget(this);
 
@@ -79,6 +80,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Connecter le signal de déplacement de la carte à la mise à jour de la barre de statut
     connect(mapWidget, &MapWidget::mapMoved, this, &MainWindow::updateStatusBar);
+    connect(mapWidget, &MapWidget::mousePositionChanged, this, [this](double lon, double lat) {
+        statusBar()->showMessage(QString("Longitude: %1, Latitude: %2").arg(lon).arg(lat));
+    });
 
     // Configurer le QTimer pour la recherche
     _search_timer->setSingleShot(true);

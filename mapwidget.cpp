@@ -1,3 +1,4 @@
+// mapwidget.cpp
 #include "mapwidget.h"
 #include <QDir>
 #include <QFile>
@@ -64,8 +65,8 @@ void MapWidget::paintEvent(QPaintEvent *event) {
 
     if (isLoading) {
         painter.setPen(Qt::blue);
-        painter.setFont(QFont("Arial", 20));
-        painter.drawText(event->rect(), Qt::AlignCenter, "Chargement...");
+        painter.setFont(QFont("Arial", 40));
+        painter.drawText(event->rect(), Qt::AlignCenter, "⏳");
     }
 }
 
@@ -91,6 +92,10 @@ void MapWidget::mouseMoveEvent(QMouseEvent *event) {
         update();
         emit mapMoved(lon, lat);
     }
+
+    // Émettre la position de la souris
+    QPointF mouseLatLon = screenPosToLatLon(event->pos());
+    emit mousePositionChanged(mouseLatLon.x(), mouseLatLon.y());
 }
 
 void MapWidget::mouseReleaseEvent(QMouseEvent *event) {
@@ -101,6 +106,8 @@ void MapWidget::mouseReleaseEvent(QMouseEvent *event) {
 }
 
 void MapWidget::wheelEvent(QWheelEvent *event) {
+    QPointF mousePosBeforeZoom = screenPosToLatLon(event->position().toPoint());
+
     int numDegrees = event->angleDelta().y() / 8;
     int numSteps = numDegrees / 15;
     zoom += numSteps;
@@ -113,13 +120,56 @@ void MapWidget::wheelEvent(QWheelEvent *event) {
 
     updateVisibleTiles();
     update();
+
+    QPointF mousePosAfterZoom = screenPosToLatLon(event->position().toPoint());
+    double lonDelta = mousePosAfterZoom.x() - mousePosBeforeZoom.x();
+    double latDelta = mousePosAfterZoom.y() - mousePosBeforeZoom.y();
+
+    lon -= lonDelta;
+    lat -= latDelta;
+
     emit mapMoved(lon, lat);
+}
+
+void MapWidget::mouseDoubleClickEvent(QMouseEvent *event) {
+    if (event->button() == Qt::LeftButton) {
+        QPointF mousePosBeforeZoom = screenPosToLatLon(event->pos());
+        zoom += 1;
+        if (zoom > 18) {
+            zoom = 18;
+        }
+        updateVisibleTiles();
+        update();
+
+        QPointF mousePosAfterZoom = screenPosToLatLon(event->pos());
+        double lonDelta = mousePosAfterZoom.x() - mousePosBeforeZoom.x();
+        double latDelta = mousePosAfterZoom.y() - mousePosBeforeZoom.y();
+
+        lon -= lonDelta;
+        lat -= latDelta;
+
+        emit mapMoved(lon, lat);
+    }
 }
 
 QPointF MapWidget::latLonToTilePos(double lon, double lat, int z) {
     double x = (lon + 180.0) / 360.0 * (1 << z);
     double y = (1.0 - log(tan(lat * M_PI / 180.0) + 1.0 / cos(lat * M_PI / 180.0)) / M_PI) / 2.0 * (1 << z);
     return QPointF(x, y);
+}
+
+QPointF MapWidget::screenPosToLatLon(const QPoint &pos) {
+    QPointF centerTilePos = latLonToTilePos(lon, lat, zoom);
+    int tileX = static_cast<int>(centerTilePos.x());
+    int tileY = static_cast<int>(centerTilePos.y());
+
+    double x = (pos.x() / 256.0) + tileX - 1;
+    double y = (pos.y() / 256.0) + tileY - 1;
+
+    double lon = x / (1 << zoom) * 360.0 - 180.0;
+    double lat = atan(sinh(M_PI * (1 - 2 * y / (1 << zoom)))) * 180.0 / M_PI;
+
+    return QPointF(lon, lat);
 }
 
 void MapWidget::loadTile(int x, int y, int z) {
