@@ -49,4 +49,4 @@ private:
     void updateStatusBar(double lon, double lat);
 };
 
-#endif // MAINWINDOW_H
+#endif
