@@ -17,8 +17,6 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        mapwidget.cpp
-        mapwidget.h
 
 
 )
@@ -27,6 +25,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(laCarteu
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        tilemanager.h tilemanager.cpp
+        mapdisplay.h mapdisplay.cpp
+        eventmanager.h eventmanager.cpp
 
 
 
